@@ -69,32 +69,6 @@ namespace Capa_Vista_Seguridad
             navegador1.mostrarDatos();
 
             // ==============================
-            // 🔓 Activar los botones al inicio
-            // ==============================
-            ActivarBotonesInternos(navegador1);
-
-            // ==============================
-            // 🔁 Crear un temporizador que re-activa botones cada 0.5 segundos
-            // ==============================
-            timerBotones = new Timer();
-            timerBotones.Interval = 500; // medio segundo
-            timerBotones.Tick += (s, e) => ActivarBotonesInternos(navegador1);
-            timerBotones.Start();
-
-        }
-
-        // ======================================================
-        // Función recursiva para habilitar botones dentro del navegador
-        // ======================================================
-        public void ActivarBotonesInternos(Control contenedor)
-        {
-            foreach (Control c in contenedor.Controls)
-            {
-                if (c is Button btn)
-                    btn.Enabled = true;
-                else if (c.HasChildren)
-                    ActivarBotonesInternos(c);
-            }
         }
     }
 }
