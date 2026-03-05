@@ -57,6 +57,10 @@
     <Reference Include="Capa_Vista_Reporteador">
       <HintPath>..\..\..\..\componentes\reporteador\reporteador\Capa_Vista_Reporteador\bin\Debug\Capa_Vista_Reporteador.dll</HintPath>
     </Reference>
+    <Reference Include="Capa_Vista_Seguridad, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\componentes\seguridad\SeguridadMVC\SeguridadMVC\CapaVista\bin\Debug\Capa_Vista_Seguridad.dll</HintPath>
+    </Reference>
     <Reference Include="Capa_Vista_ValidarCliente">
       <HintPath>..\..\Proceso5-ValidarDatosCliente\ValidarCliente_MVC\Capa_Vista_ValidarCliente\bin\Debug\Capa_Vista_ValidarCliente.dll</HintPath>
     </Reference>
@@ -120,6 +124,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
